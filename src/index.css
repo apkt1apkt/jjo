@@ -7,3 +7,60 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1400px;
+  }
+}
+
+button {
+  cursor: pointer;
+  background-color: #3980ec;
+  padding: 10px 25px;
+  border-style: none;
+  border-radius: 3px;
+  overflow: hidden;
+  color: white;
+  font-size: 12px;
+  box-shadow: 0px 8px 9px -5px #3c85dc, 0px 1px 5px 0px #3c85dc;
+}
+
+button:hover {
+  background-color: #1661ad;
+  box-shadow: 0px 8px 9px -5px #1481ee, 0px 1px 5px 0px #1661ad;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.75)), url(./assets/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}

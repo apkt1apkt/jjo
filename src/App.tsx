@@ -1,7 +1,9 @@
-import "./App.css";
+import Banner from "./content/Banner";
 
-function App() {
-  return <div></div>;
+export default function App() {
+  return (
+    <div>
+      <Banner />
+    </div>
+  );
 }
-
-export default App;
