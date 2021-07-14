@@ -19,10 +19,10 @@ export default function JobOffers() {
 
 const STYLES = {
   container: {
-    marginTop: 50,
+    marginTop: 40,
   },
   jobOffers: {
-    marginTop: 30,
+    marginTop: 20,
     display: "grid",
     gridTemplateColumns: "33.3% 33.40% 33.3%",
   },
