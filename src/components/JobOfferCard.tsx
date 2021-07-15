@@ -1,3 +1,4 @@
+import Timer from "./Timer";
 import { grayColor, lightGrayColor, primaryColor } from "../styles";
 
 export default function JobOfferCard(props: JobOfferCardProps) {
@@ -13,7 +14,9 @@ export default function JobOfferCard(props: JobOfferCardProps) {
             <span style={STYLES.company}>{company}</span>
             <span style={STYLES.location}>{location}</span>
           </div>
-          <div style={STYLES.time}>{time}</div>
+          <div style={STYLES.time}>
+            <Timer start={time} />
+          </div>
         </div>
         <div style={STYLES.description}>{description}</div>
         <button style={STYLES.iconButton}>
@@ -30,7 +33,7 @@ type JobOfferCardProps = {
   title: string;
   company: string;
   location: string;
-  time: string;
+  time: string | Date;
   description: string;
   index?: number;
 };
