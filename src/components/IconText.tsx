@@ -20,6 +20,7 @@ const STYLES = {
   container: {
     margin: "10px 5px",
     width: 95,
+    cursor: "pointer",
   },
   center: {
     display: "flex",

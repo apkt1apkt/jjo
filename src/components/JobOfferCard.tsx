@@ -1,3 +1,5 @@
+import { grayColor, primaryColor } from "../styles";
+
 export default function JobOfferCard(props: JobOfferCardProps) {
   const { title, company, time, description, location } = props;
   const index = (props.index ?? 2) + 1;
@@ -7,11 +9,11 @@ export default function JobOfferCard(props: JobOfferCardProps) {
       <div>
         <div style={STYLES.heading}>
           <div>
-            <div>{title}</div>
-            <span>{company}</span>
+            <div style={STYLES.title}>{title}</div>
+            <span style={STYLES.company}>{company}</span>
             <span style={STYLES.location}>{location}</span>
           </div>
-          <div>{time}</div>
+          <div style={STYLES.time}>{time}</div>
         </div>
         <div style={STYLES.description}>{description}</div>
         <button style={STYLES.iconButton}>
@@ -53,10 +55,11 @@ const STYLES = {
   description: {
     display: "flex",
     justifyContent: "space-between",
-    color: "#AFAFAF",
-    fontSize: 14,
+    color: grayColor,
+    fontSize: 13,
     marginTop: 15,
-    marginRight: 20,
+    marginRight: 30,
+    fontWeight: 500,
   },
   iconButton: {
     padding: "5px 10px",
@@ -67,6 +70,22 @@ const STYLES = {
     right: 45,
   },
   location: {
-    marginLeft: 20,
+    marginLeft: 13,
+    color: grayColor,
+    fontSize: 13,
+    fontWeight: 500,
+  },
+  title: {
+    fontWeight: 700,
+    color: primaryColor,
+  },
+  company: {
+    fontSize: 13,
+    fontWeight: 600,
+  },
+  time: {
+    color: grayColor,
+    fontSize: 12,
+    fontWeight: 500,
   },
 };
