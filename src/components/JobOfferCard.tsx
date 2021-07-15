@@ -1,4 +1,4 @@
-import { grayColor, primaryColor } from "../styles";
+import { grayColor, lightGrayColor, primaryColor } from "../styles";
 
 export default function JobOfferCard(props: JobOfferCardProps) {
   const { title, company, time, description, location } = props;
@@ -41,9 +41,9 @@ const STYLES = {
     position: "relative" as const,
   },
   showDivider: {
-    width: 2,
-    margin: "6px 25px",
-    backgroundColor: "grey",
+    width: 5,
+    margin: "0px 25px",
+    backgroundColor: lightGrayColor,
   },
   hideDivider: {
     margin: "6px 12px",

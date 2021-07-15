@@ -29,7 +29,7 @@ const STYLES = {
     marginTop: 40,
   },
   jobOffers: {
-    marginTop: 20,
+    marginTop: 10,
     display: "grid",
     gridTemplateColumns: "33.3% 33.40% 33.3%",
   },

@@ -1,3 +1,5 @@
+import { lightGrayColor } from "../styles";
+
 export default function BorderedIcon(props: BorderedIconProps) {
   return (
     <span style={STYLES.container}>
@@ -16,7 +18,7 @@ const STYLES = {
     borderStyle: "solid",
     borderWidth: 1.5,
     padding: "14px 16px",
-    borderColor: "#D5D8DC",
+    borderColor: lightGrayColor,
   },
   icon: {
     textShadow: "0px 0px 1px #000000, 0px 0px 1px #000000",
