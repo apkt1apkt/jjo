@@ -1,5 +1,7 @@
-export const primaryColor = "#3B82F0";
+const getCSSVariable = (name: string) => getComputedStyle(document.documentElement).getPropertyValue(`--${name}`);
 
-export const grayColor = "#AFAFAF";
+export const primaryColor = getCSSVariable("primary");
 
-export const lightGrayColor = "#D5D8DC";
+export const grayColor = getCSSVariable("gray");
+
+export const lightGrayColor = getCSSVariable("lightGray");

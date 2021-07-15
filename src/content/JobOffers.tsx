@@ -9,7 +9,7 @@ export default function JobOffers() {
       <div style={STYLES.top}>
         <Header heading="Newest Job Offers" />
         <div style={STYLES.viewAll}>
-          View all job offers
+          <span className="off-sm">View all job offers</span>
           <i style={STYLES.icon} className="fa fa-arrow-right" aria-hidden="true"></i>
         </div>
       </div>
