@@ -20,6 +20,6 @@ const STYLES = {
     marginTop: 0,
   },
   catchPhrase: {
-    fontSize: 15,
+    fontSize: 14,
   },
 };

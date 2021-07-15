@@ -3,6 +3,7 @@
 :root {
   --primary: #3b82f0;
   --info: #3e83fd;
+  --lightGray: #d5d8dc;
 }
 
 body {
@@ -14,11 +15,11 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 488px) {
   .container {
     width: 98%;
   }
@@ -52,4 +53,49 @@ header {
   background-size: cover;
   background-position: center;
   height: 350px;
+}
+
+.offers-container {
+  display: grid;
+  width: 100%;
+}
+
+.offers-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  height: 100%;
+}
+
+.offers-block {
+  height: 100%;
+  position: relative;
+}
+
+.offers-block:after {
+  content: "";
+  position: absolute;
+  border-left: 2px solid var(--lightGray);
+  right: -20px;
+  top: 0px;
+  height: 100%;
+}
+
+.offers-block:last-child:after {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .offers-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 488px) {
+  .offers-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .offers-block:after {
+    display: none;
+  }
 }

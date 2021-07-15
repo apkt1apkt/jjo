@@ -19,7 +19,7 @@ type IconTextProps = { label: string; icon: string };
 const STYLES = {
   container: {
     margin: "10px 5px",
-    width: 95,
+    width: 90,
     cursor: "pointer",
   },
   center: {

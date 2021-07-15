@@ -14,10 +14,12 @@ export default function JobOffers() {
         </div>
       </div>
       <div>
-        <div style={STYLES.jobOffers}>
-          {JOB_OFFERS.map((v, i) => (
-            <JobOfferCard key={i} {...v} index={i} />
-          ))}
+        <div className="offers-container">
+          <div className="offers-content">
+            {JOB_OFFERS.map((v, i) => (
+              <JobOfferCard key={i} {...v} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
@@ -27,11 +29,6 @@ export default function JobOffers() {
 const STYLES = {
   container: {
     marginTop: 40,
-  },
-  jobOffers: {
-    marginTop: 10,
-    display: "grid",
-    gridTemplateColumns: "33.3% 33.40% 33.3%",
   },
   top: {
     display: "flex",
