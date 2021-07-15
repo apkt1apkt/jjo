@@ -63,6 +63,7 @@ const STYLES = {
     marginTop: 15,
     marginRight: 30,
     fontWeight: 500,
+    whiteSpace: "pre-wrap" as const,
   },
   iconButton: {
     padding: "5px 10px",

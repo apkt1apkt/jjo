@@ -7,7 +7,7 @@ export const JOB_OFFERS = [
     location: "Wrclaw, Polska",
     time: dayjs().subtract(2, "hours").toDate(),
     description:
-      "I am currently looking or a Java Developer, Project for Public Sector Location: Wroclaw (during the pandemic remote work)\n\n$ up to PLN 550 net / MD B2B",
+      "I am currently looking or a Java Developer, Project for Public Sector Location: Wroclaw (during the pandemic remote work)\n$ up to PLN 550 net / MD B2B",
   },
   {
     title: "Junior Project Manager",
